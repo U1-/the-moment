@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
+index:
+---
+layout: default
+title: Since 2012
+---
+  <title>U1==Yuan</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="U1 : for U1" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>U1==Yuan</title>
-  </head>
 
 <body>
 
@@ -18,12 +13,10 @@
         <header class="inner">
           <h1 id="project_title">轻狂，幸福时光</h1>
           <h2 id="project_tagline">生如夏花之绚烂，逝如秋叶之静美</h2>
-          
-        </header>    
-
-      <ul>{% for post in site.posts %}<li>{{ post.date | date_to_string }}<a herf="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li> 
-	{% endfor %}</ul>
-    
-
-  </body>
-</html>
+        </header>
+<ul>
+{% for post in site.posts %}
+<li>{{ post.date | date_to_string }} <a herf="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
